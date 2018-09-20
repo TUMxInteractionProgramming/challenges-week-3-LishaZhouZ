@@ -67,7 +67,7 @@ li img {
 /* TAB BAR */
 
 /* #4 #sweat #tab-bar */
-#tab-bar {
+#tab-bar,#chat-bar{
     /* #3 #tab-bar #container should be white */
     background-color: white;
     /* #3 #tab-bar #container has all buttons centered */
@@ -75,11 +75,10 @@ li img {
 }
 
 /* #4 add styles to #tab-bar #buttons */
-#tab-bar button {
+#tab-bar button{
     background-color: white;
     border: none;
     font-size: 13px;
-
     /* #4 #tab-bar buttons have a width of #one-third of the available space */
     width: 33%;
     height: 72px;

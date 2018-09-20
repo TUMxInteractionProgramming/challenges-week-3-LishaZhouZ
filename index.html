@@ -9,42 +9,58 @@
 
     <!-- #4 #sweat out the styles by creating an #external css -->
     <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" href="css/section.css" />
     
 </head>
+
 <body>
 <!-- #4 #one #page -->
 <div id="channels">
     <h1>
         <!-- #3 #channels #moocus the talkative duck-->
         <img src="http://ip.lfe.mw.tum.de/sections/moocus.png" alt="Moocus, the chatty duck!" style="height: 56px;">
-        chatter|app
+            chatter|app
     </h1>
 
     <!-- #3 #channels #list is much better, than headlines or paragraphs... -->
     <ul>
         <li>#Yummy
             <!-- #3 #channels #favorite this is not starred -->
-            <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
+            <span>
+                    <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
+                    <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="right chevron">
+            </span>
         </li>
 
         <!-- #4 #channel is #highlighted -->
         <li class="selected">
             #SevenContinents
             <!-- #3 #channels #favorite this is starred -->
-            <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
+            <span>
+                    <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
+                    <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="right chevron">
+            </span>
         </li>
         <li>#KillerApp
             <!-- #3 #channels #favorite this is not starred -->
-            <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
+            <span>
+                    <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
+                    <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="right chevron">
+            </span>
         </li>
         <li>#FirstPersonOnMars
             <!-- #3 #channels #favorite this is starred -->
-            <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
+            <span>
+                    <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
+                    <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="right chevron">
+            </span>
         </li>
         <li>#Octoberfest
             <!-- #3 #channels #favorite this is not starred -->
-            <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
+            <span>
+                    <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
+                    <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="right chevron">
+            </span>
         </li>
     </ul>
 
@@ -169,6 +185,14 @@
         <p>北京</p>
         <button>+5 min.</button>
     </div>
+
+    <div id="chat-bar">
+        <button id="emojis-button"><img src="http://ip.lfe.mw.tum.de/sections/smile-o.png">
+        </button>
+        <div id="emojis">&#x1F601; &#x1F602; &#x1F603; &#x1F604; &#x1F605; &spades;</div>
+
+            </div>
+    
 </div>
 
 </body>
