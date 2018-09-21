@@ -32,6 +32,10 @@ h1 {
     color: white;
 }
 
+h1 * a{
+    color:white;
+}
+
 
 /* CHANNELS LIST */
 

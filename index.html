@@ -10,7 +10,8 @@
     <!-- #4 #sweat out the styles by creating an #external css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/section.css" />
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
 
     <!-- #3 #channels #list is much better, than headlines or paragraphs... -->
     <ul>
-        <li>#Yummy
+        <li onclick="switchChannel('Yummy')">#Yummy
             <!-- #3 #channels #favorite this is not starred -->
             <span>
                     <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
@@ -33,7 +34,7 @@
         </li>
 
         <!-- #4 #channel is #highlighted -->
-        <li class="selected">
+        <li class="selected" onclick="switchChannel('SevenContinents')">
             #SevenContinents
             <!-- #3 #channels #favorite this is starred -->
             <span>
@@ -41,21 +42,21 @@
                     <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="right chevron">
             </span>
         </li>
-        <li>#KillerApp
+        <li onclick="switchChannel('KillerApp')">#KillerApp
             <!-- #3 #channels #favorite this is not starred -->
             <span>
                     <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
                     <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="right chevron">
             </span>
         </li>
-        <li>#FirstPersonOnMars
+        <li onclick="switchChannel('FirstPersonOnMars')">#FirstPersonOnMars
             <!-- #3 #channels #favorite this is starred -->
             <span>
                     <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
                     <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="right chevron">
             </span>
         </li>
-        <li>#Octoberfest
+        <li onclick="switchChannel('Octoberfest')">#Octoberfest
             <!-- #3 #channels #favorite this is not starred -->
             <span>
                     <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
@@ -68,17 +69,17 @@
     <!-- #4 #sweat #tab-bar -->
     <div id="tab-bar">
         <!-- #4 #tab-bar selected channel should be #highlighted -->
-        <button class="selected">
+        <button class="selected" id="New" onclick="selectTab('New')">
             <!-- #3 #tab-bar #images -->
             <img src="http://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="Bulb">
             New
         </button>
-        <button>
+        <button id="Trending" onclick="selectTab('Trending')">
             <!-- #3 #tab-bar #images -->
             <img src="http://ip.lfe.mw.tum.de/sections/fire.png" alt="Hot">
             Trending
         </button>
-        <button>
+        <button id="Favorites" onclick="selectTab('Favorites')">
             <!-- #3 #tab-bar #images -->
             <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="Star">
             Favorites
@@ -89,10 +90,12 @@
 <!-- #4 #one #page -->
 <div id="chat">
     <h1>
-        #SevenContinents
-        <small>by
-            <strong>cheeses.yard.applies</strong>
-        </small>
+    <span>#SevenContinents</span>
+
+    <small>by</small>
+    <small><strong><a href="http://w3w.co/cheeses.yard.applies" target="_blank">cheeses.yard.applies</a></strong></small>
+    <img id="starred" src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
+    <img id="unstarred" src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="unstarred" onclick="toggleStar()">
     </h1>
 
     <!-- #3 #chat #container -->
@@ -187,11 +190,11 @@
     </div>
 
     <div id="chat-bar">
-        <button id="emojis-button"><img src="http://ip.lfe.mw.tum.de/sections/smile-o.png">
+        <button id="emojis-button" onclick="toggleEmojis()"><img src="http://ip.lfe.mw.tum.de/sections/smile-o.png">
         </button>
         <div id="emojis">&#x1F601; &#x1F602; &#x1F603; &#x1F604; &#x1F605; &spades;</div>
 
-            </div>
+    </div>
     
 </div>
 
